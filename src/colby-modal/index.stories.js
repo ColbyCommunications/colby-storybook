@@ -2,8 +2,9 @@ import React from 'react';
 import Modal from '@colbycommunications/colby-modal';
 import common from '../common.css';
 import { withA11y } from '@storybook/addon-a11y';
+import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 
-export default { title: 'Modal', decorators: [withA11y] };
+export default { title: 'Modal', decorators: [withA11y, withKnobs] };
 
 export const Simple = () => (
     <div className={common.demoContainer}>
@@ -14,7 +15,7 @@ export const Simple = () => (
                 </button>
             }
             showModalCloseButton
-            title="I am a modal"
+            title={text('Modal Title', 'I am a modal')}
         >
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -30,7 +31,7 @@ export const Simple = () => (
 
 export const LinkAsTrigger = () => (
     <div className={common.demoContainer}>
-        <Modal trigger={<a href="#">Open Modal</a>} title="I am a modal">
+        <Modal trigger={<a href="#">Open Modal</a>} title={text('Modal Title', 'I am a modal')}>
             <div>Modal content</div>
         </Modal>
     </div>
