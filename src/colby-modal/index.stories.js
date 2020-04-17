@@ -1,9 +1,9 @@
 import React from 'react';
 import Modal from '@colbycommunications/colby-modal';
-import 'bootstrap/dist/css/bootstrap.css?raw';
 import common from '../common.css';
+import { withA11y } from '@storybook/addon-a11y';
 
-export default { title: 'Modal' };
+export default { title: 'Modal', decorators: [withA11y] };
 
 export const Simple = () => (
     <div className={common.demoContainer}>

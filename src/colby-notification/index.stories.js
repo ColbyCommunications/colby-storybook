@@ -1,9 +1,9 @@
 import React from 'react';
 import notification from '@colbycommunications/colby-notification';
-import 'bootstrap/dist/css/bootstrap.css?raw';
 import common from '../common.css';
+import { withA11y } from '@storybook/addon-a11y';
 
-export default { title: 'Notification' };
+export default { title: 'Notification', decorators: [withA11y] };
 
 export const Simple = () => (
     <div className={common.demoContainer}>

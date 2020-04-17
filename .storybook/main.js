@@ -9,12 +9,23 @@ const postcssLoader = {
 
 module.exports = {
     stories: ['../src/**/*.stories.[tj]s'],
+    addons: [
+        '@storybook/addon-storysource',
+        '@storybook/addon-knobs',
+        '@storybook/addon-a11y/register',
+        // '@storybook/addon-docs',
+    ],
     webpackFinal: (config) => {
         return {
             ...config,
             module: {
                 ...config.module,
                 rules: [
+                    {
+                        test: /\.stories\.js?$/,
+                        loaders: [require.resolve('@storybook/source-loader')],
+                        enforce: 'pre',
+                    },
                     {
                         test: /\.css$/,
                         oneOf: [

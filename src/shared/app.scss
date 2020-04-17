@@ -1,0 +1,36 @@
+// Bootstrap
+
+// $theme-colors: (
+//     'primary': #002878,
+//     'danger': #ff4136,
+// );
+// $enable-rounded: false !default;
+@import '~bootstrap/scss/bootstrap';
+
+// more app styles
+#styledTabs {
+    .nav-tabs {
+        border-bottom: 3px solid #002878;
+
+        .colby-tabs-tab {
+            &.active {
+                color: #fff !important;
+                background-color: #002878;
+                border-color: #002878;
+                border-radius: 0;
+
+                a {
+                    color: #fff !important;
+                }
+            }
+
+            a {
+                color: #212529 !important;
+            }
+
+            &:hover {
+                border-color: #fff #fff #002878;
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import Loader from '@colbycommunications/colby-loader';
-import 'bootstrap/dist/css/bootstrap.css?raw';
 import common from '../common.css';
+import { withA11y } from '@storybook/addon-a11y';
 
-export default { title: 'Loader' };
+export default { title: 'Loader', decorators: [withA11y] };
 
 export const Global = () => (
     <div className={common.demoContainer}>
