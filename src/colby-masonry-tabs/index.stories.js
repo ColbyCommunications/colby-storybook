@@ -69,7 +69,8 @@ export const Themes = () => {
                     {
                         name: 'two',
                         title: 'Homepage Slides',
-                        endpoint: 'https://www.colby.edu/wp-json/wp/v2/posts/?per_page=100',
+                        endpoint:
+                            'https://www.colby.edu/news/wp-json/wp/v2/posts/?per_page=100&categories=223',
                         fields: {
                             id: 'id',
                             title: 'title.rendered',
