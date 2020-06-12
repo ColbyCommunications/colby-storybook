@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+
+    > * {
+        border: 1px solid #999;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 10px 10px 0;
+        background-color: #eee;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
