@@ -30,6 +30,7 @@
         "@colbycommunications/colby-modal": "^1.0.0",
         "@colbycommunications/colby-notification": "^1.0.0",
         "@colbycommunications/colby-paginator-component": "^1.0.0",
+        "@colbycommunications/colby-swiper-component": "^1.0.0",
         "@colbycommunications/colby-table-component": "^1.0.1",
         "@colbycommunications/colby-tabs": "^1.1.0",
         "@storybook/addon-a11y": "^6.0.6",
@@ -39,6 +40,7 @@
         "bootstrap": "^4.5.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-redux": "^7.2.1"
+        "react-redux": "^7.2.1",
+        "swiper": "^6.1.2"
     }
 }
