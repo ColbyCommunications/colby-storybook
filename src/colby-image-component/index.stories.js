@@ -93,6 +93,6 @@ export const SingleWithLightbox = () => {
     return <SingleImgDemo />;
 };
 
-export const Gallery = () => {
+export const LightboxGallery = () => {
     return <GalleryDemo />;
 };
