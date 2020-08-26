@@ -8,7 +8,7 @@ export default { title: 'Image', decorators: [withA11y] };
 const SingleImgDemo = class SimpleImgDemo extends Component {
     lightbox = new FsLightbox();
     componentDidMount() {
-        this.lightbox.props.sources = ['/images/hats-and-miller-Comm2016-162_optimized.jpg'];
+        this.lightbox.props.sources = ['images/hats-and-miller-Comm2016-162_optimized.jpg'];
     }
 
     componentWillUnmount() {
@@ -25,7 +25,7 @@ const SingleImgDemo = class SimpleImgDemo extends Component {
                     style={{ cursor: 'pointer' }}
                 >
                     <img
-                        src="/images/hats-and-miller-Comm2016-162_optimized.jpg"
+                        src="images/hats-and-miller-Comm2016-162_optimized.jpg"
                         className="img-fluid"
                         alt="test"
                     />
@@ -39,8 +39,8 @@ const GalleryDemo = class GalleryDemo extends Component {
     lightbox = new FsLightbox();
     componentDidMount() {
         this.lightbox.props.sources = [
-            '/images/hats-and-miller-Comm2016-162_optimized.jpg',
-            '/images//Will-Johnson-homepage-02-1.jpg',
+            'images/hats-and-miller-Comm2016-162_optimized.jpg',
+            'images/Will-Johnson-homepage-02-1.jpg',
         ];
     }
 
@@ -58,7 +58,7 @@ const GalleryDemo = class GalleryDemo extends Component {
                     style={{ cursor: 'pointer' }}
                 >
                     <img
-                        src="/images/hats-and-miller-Comm2016-162_optimized.jpg"
+                        src="images/hats-and-miller-Comm2016-162_optimized.jpg"
                         className="img-fluid"
                         alt="test"
                     />
@@ -66,7 +66,7 @@ const GalleryDemo = class GalleryDemo extends Component {
 
                 <a data-fslightbox="gallery" onClick={() => lightbox.open()}>
                     <img
-                        src="/images//Will-Johnson-homepage-02-1.jpg"
+                        src="images//Will-Johnson-homepage-02-1.jpg"
                         className="img-fluid"
                         alt="test"
                         data-type="image"
@@ -81,7 +81,7 @@ export const Single = () => {
     return (
         <div className={`${common.demoContainer} container`}>
             <Image
-                src={{ main: '/images/hats-and-miller-Comm2016-162_optimized.jpg' }}
+                src={{ main: 'images/hats-and-miller-Comm2016-162_optimized.jpg' }}
                 altText="The quick fox jumped over the lazy dog"
                 useLightbox={false}
             />
