@@ -26,6 +26,7 @@
         "@colbycommunications/colby-click-button-component": "^1.0.0",
         "@colbycommunications/colby-confirm-component": "^1.0.1",
         "@colbycommunications/colby-datepicker-component": "^1.0.0",
+        "@colbycommunications/colby-hidden-block-component": "^1.0.0",
         "@colbycommunications/colby-image-component": "^1.1.0",
         "@colbycommunications/colby-loader": "^2.0.2",
         "@colbycommunications/colby-masonry-tabs": "^1.1.3",
