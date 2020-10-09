@@ -34,7 +34,7 @@ export const SimpleSlider = () => {
     ];
     return (
         <div className={common.demoContainer}>
-            <div>
+            <div style={{ maxWidth: '500px' }}>
                 <Swiper slides={slides} />
             </div>
         </div>
@@ -68,7 +68,7 @@ export const DynamicBullets = () => {
     ];
     return (
         <div className={common.demoContainer}>
-            <div>
+            <div style={{ maxWidth: '500px' }}>
                 <Swiper slides={slides} dynamicBullets />
             </div>
         </div>
@@ -213,7 +213,7 @@ export const Video = () => {
         },
     ];
     return (
-        <div className={common.demoContainer}>
+        <div className={common.demoContainer} style={{ maxWidth: '500px' }}>
             <Swiper slides={slides} />
         </div>
     );
@@ -242,7 +242,7 @@ export const PredefinedTemplates = () => {
     ];
     return (
         <div className={common.demoContainer}>
-            <div>
+            <div style={{ maxWidth: '500px' }}>
                 <h1>SOBLU</h1>
                 <Swiper slides={slides} template="solbu" />
             </div>
